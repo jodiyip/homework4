@@ -44,7 +44,8 @@ nav a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-
+  position: relative;
+  margin-top: 40px;/**/
   /*Your code here - position relative to the parent */
   /*Your code here - place 40px higher */;
 }
@@ -52,12 +53,18 @@ nav a:hover{
 /*Your code here*/
 /*Add the selector and rule to move the skip 
 link to the exact top of the page.*/
- 
+.skip link.absolute{
+  /*align-content: start;*/
+  position: absolute;
+  top: 40px;
+}
 
 /*Your code here*/
 /*Add the selector and code to put a 2px black 
 border around all elements in focus.*/
-  
+a:focus{
+  outline: 2px solid black;
+}
 
 footer{
   background-color: black;
@@ -82,7 +89,7 @@ nav{
 
 header{
   background: url("../images/header.jpg");
-  background-color: #DDDDDD;
+  background-color: #000000;
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
@@ -90,7 +97,7 @@ header{
   color: white;
   height: 400px;                /* Parallax effect */
   grid-column:1/-1;
-  grid-row: 2 / span 1;
+  grid-row: 2;
 
   /* Your code here */
   /* Set background-image to header.jpg in the images folder */
@@ -176,8 +183,6 @@ header p{
   /*Your code here:*/
   /*Align the content in the center */
 }
-
-
 
 @media all and (min-width: 800px){
 
