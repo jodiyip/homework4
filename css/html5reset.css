@@ -100,3 +100,15 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+input {
+outline: none;
+}
+
+select {
+outline: none;
+}
+
+textarea {
+outline: none;
+}

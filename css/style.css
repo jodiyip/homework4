@@ -37,7 +37,7 @@ nav a:hover{
   text-decoration: underline;
 }
 
-.skip a{
+.skip a:focus{
   background: white;
   left: 0;
   padding: 6px;
@@ -45,7 +45,7 @@ nav a:hover{
   transition: top 1s ease-out;
   z-index: 1;
   position: relative;
-  margin-top: 40px;/**/
+  top: 40px;
   /*Your code here - position relative to the parent */
   /*Your code here - place 40px higher */;
 }
@@ -53,16 +53,15 @@ nav a:hover{
 /*Your code here*/
 /*Add the selector and rule to move the skip 
 link to the exact top of the page.*/
-.skip link.absolute{
-  /*align-content: start;*/
+.skip a{
   position: absolute;
-  top: 40px;
+  top: -40px;
 }
 
 /*Your code here*/
 /*Add the selector and code to put a 2px black 
 border around all elements in focus.*/
-a:focus{
+*:focus{
   outline: 2px solid black;
 }
 
